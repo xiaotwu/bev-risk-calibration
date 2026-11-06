@@ -1,12 +1,12 @@
-# Stopping-Support Bias and Progress Costs Under Stale Bird's-Eye-View Observations
+# Predictive Value of Observation Age for Stopping-Support Error in Longitudinal Braking
 
-[Read the final IEEE report](paper/stale-bev-braking-risk.pdf)
+[Manuscript PDF](paper/observation-age/observation-age-stopping-support-paper.pdf) · [Source and build instructions](paper/observation-age/REPRODUCE.md)
 
-The report follows a stale lead-vehicle observation from BEV tracking through the braking decision to closed-loop travel. It combines a collision audit, matched trajectory replay, and paired closed-loop simulation. A short discussion connects observation quality to the validation of driving-risk indicators.
+The manuscript evaluates observation age as a predictor of stopping-support error on four held-out trajectory campaigns. It compares predictions by horizon, tests horizon-specific calibration and fitting, and separately evaluates paired bird's-eye-view detector outputs near a prespecified braking boundary.
 
-## Reproducibility
+## Earlier Report and Reproducibility
 
-[Evidence tables](evidence/README.md) · [Risk controller](risk/README.md) · [Trajectory replay](replay/README.md) · [Layer-Gate source overlay](layer_gate/README.md) · [Rights and attribution](RIGHTS.md)
+[Earlier report](paper/stale-bev-braking-risk.pdf) · [Evidence tables](evidence/README.md) · [Risk controller](risk/README.md) · [Trajectory replay](replay/README.md) · [Layer-Gate source overlay](layer_gate/README.md) · [Rights and attribution](RIGHTS.md)
 
 From the repository root with Python 3.10 or newer, install the dependencies and run the archived evidence and controller checks.
 

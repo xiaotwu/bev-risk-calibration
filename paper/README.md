@@ -1,5 +1,4 @@
-# Final report source
+# Manuscripts
 
-The [final PDF](stale-bev-braking-risk.pdf) uses the IEEEtran conference format. To rebuild it from `main.tex` and `references.bib`, install IEEEtran, the LaTeX packages in the preamble, and BibTeX. Run `latexmk -pdf main.tex` from this directory. The build was verified with Tectonic 0.17.0.
-
-[Evidence and provenance](../evidence/README.md)
+- [Predictive Value of Observation Age for Stopping-Support Error in Longitudinal Braking](observation-age/observation-age-stopping-support-paper.pdf) · [Source and build instructions](observation-age/REPRODUCE.md)
+- [Stopping-Support Bias and Progress Costs Under Stale Bird's-Eye-View Observations](stale-bev-braking-risk.pdf). This earlier report uses the `main.tex` and `references.bib` in this directory. See the [evidence and provenance](../evidence/README.md).
