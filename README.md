@@ -1,6 +1,6 @@
 # Predictive Value of Observation Age for Stopping-Support Error in Longitudinal Braking
 
-[Manuscript PDF](paper/observation-age/observation-age-stopping-support-paper.pdf) · [Source and build instructions](paper/observation-age/REPRODUCE.md)
+[Manuscript PDF](paper/observation-age/observation-age-stopping-support-paper.pdf) · [Supporting results](paper/observation-age/REPRODUCE.md)
 
 The manuscript evaluates observation age as a predictor of stopping-support error on four held-out trajectory campaigns. It compares predictions by horizon, tests horizon-specific calibration and fitting, and separately evaluates paired bird's-eye-view detector outputs near a prespecified braking boundary.
 
