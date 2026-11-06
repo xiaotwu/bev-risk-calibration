@@ -1,8 +1,8 @@
-# Stale BEV Observations and Braking Risk
+# Stopping-Support Bias and Progress Costs Under Stale Bird's-Eye-View Observations
 
 [Read the final IEEE report](paper/stale-bev-braking-risk.pdf)
 
-The report follows a stale lead-vehicle observation from BEV tracking through the braking decision to closed-loop travel. It combines the collision audit, recorded-trajectory replay, and paired simulation around that control question.
+The report follows a stale lead-vehicle observation from BEV tracking through the braking decision to closed-loop travel. It combines a collision audit, matched trajectory replay, and paired closed-loop simulation. A short discussion connects observation quality to the validation of driving-risk indicators.
 
 ## Reproducibility
 
