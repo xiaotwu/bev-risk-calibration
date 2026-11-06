@@ -1,23 +1,18 @@
 # Stale BEV Observations and Braking Risk
 
-This research companion accompanies [Braking-Risk Bias and Progress Costs Under Stale Bird's-Eye-View Observations](paper/stale-bev-braking-risk.pdf), an English IEEE double-column manuscript. The editable LaTeX source and the published figure are in [paper](paper/).
+[Read the final IEEE report](paper/stale-bev-braking-risk.pdf)
 
-The manuscript separates three evidence sources. The retrospective collision audit identifies saved states at which braking backup viability was lost. Paired closed-loop simulations quantify travel under feedback. Replays of measured road and test-track trajectories quantify open-loop estimation error during an imposed observation hold. The simulation holdouts support a descriptive comparison. Formal safety noninferiority was not tested. Layer-Gate is the upstream project context.
+The report follows a stale lead-vehicle observation from BEV tracking through the braking decision to closed-loop travel. It combines the collision audit, recorded-trajectory replay, and paired simulation around that control question.
 
-## Run the companion
+## Reproducibility
 
-Use Python 3.10 or newer. From the repository root:
+[Evidence tables](evidence/README.md) · [Risk controller](risk/README.md) · [Trajectory replay](replay/README.md) · [Layer-Gate source overlay](layer_gate/README.md) · [Rights and attribution](RIGHTS.md)
+
+From the repository root with Python 3.10 or newer, install the dependencies and run the archived evidence and controller checks.
 
 ```sh
 python -m pip install -r requirements.txt
 python -B verify_release.py
-python -B -m risk
 ```
 
-The risk-controller module and its checks are described in [risk](risk/README.md). [Replay](replay/README.md) documents how to obtain the original FHWA and JRC inputs and rerun the matched trajectory analysis. The [Layer-Gate source overlay](layer_gate/README.md) preserves the local camera/LiDAR fusion changes against a pinned upstream checkout.
-
-## Reproducibility scope
-
-The included evidence allows numerical readback of the paper's paired simulation travel and contact outcomes, historical collision-boundary counts, and common-history error summaries. It does not reproduce the original CARLA capture jobs or the full detector-training environment. The archive includes no private credentials, third-party binaries, model weights, point clouds, or raw road or test-track trajectories.
-
-See [Evidence and provenance](evidence/README.md) and [Rights and attribution](RIGHTS.md).
+The checks recompute the headline simulation results from frozen scene-level tables and exercise the portable controller and replay code. The replay instructions describe how to acquire the original road and test-track data. The original CARLA capture and detector-training environments are outside the scope of the portable checks.

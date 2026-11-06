@@ -46,6 +46,15 @@ def verify_forensics():
     assert len(cases) == 62 and len({row["index"] for row in cases}) == 31
     assert sum(row["collision"] == "True" for row in cases) == 51
     assert len(boundaries) == 49
+    timeline = rows("boundary_timeline.csv")
+    boundary_keys = {(row["index"], row["side"], round(float(row["issue_s"]), 5)) for row in boundaries}
+    timeline_keys = {(row["index"], row["side"], round(float(row["time"]), 5)) for row in timeline}
+    assert len(timeline) == len(boundary_keys) == 49 and timeline_keys == boundary_keys
+    assert all(row["positive_update"] == "False"
+               and float(row["mean_gap"]) > float(row["truth_gap"])
+               and float(row["mean_lead_speed"]) > float(row["truth_lead_speed"])
+               for row in timeline)
+    assert sum(round(float(row["positive_age_s"]), 5) >= 1 for row in timeline) == 47
     assert sum(row["command_changed"] == "True" for row in boundaries) == 35
     assert sum(row["fixed_backup_remains_viable"] == "True" for row in boundaries) == 32
     return dict(scenes=31, contact_trajectories=51, identifiable_boundaries=49,

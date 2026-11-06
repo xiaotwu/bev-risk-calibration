@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent
 PAPER = ROOT / "paper" / "stale-bev-braking-risk.pdf"
-PAPER_SHA256 = "ea329fed85a9e09f82ae71953c77f1a1a9b2bab79d2e33dc8d8e56ec2f82f832"
+PAPER_SHA256 = "ca7f18b7634aff1042c3fa453a6518b3584434d93251e806471341186101fdee"
 HAN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff\U00020000-\U000323af]")
 UNPUBLISHED_PATH = re.compile(r"/home/xiaotwu/|/mnt/c/Users/|[Cc]:[/\\]Users[/\\]", re.IGNORECASE)
 
