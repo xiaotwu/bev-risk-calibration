@@ -1,0 +1,2 @@
+-r replay/requirements.txt
+scipy>=1.9,<2

@@ -1,0 +1,6 @@
+__pycache__/
+/raw/
+/raw_recordings/
+/results_recordings/
+/openacc/raw/
+/openacc/results/
