@@ -6,8 +6,8 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-PAPER = ROOT / "paper" / "stale-bev-braking-risk.pdf"
-PAPER_SHA256 = "658de36c4c2e8ca19fa5625351db3f41afc2dbc321bbc61737764bc9e65df922"
+PAPER = ROOT / "paper" / "observation-age" / "observation-age-stopping-support-paper.pdf"
+PAPER_SHA256 = "bc8cb11414093f3c2e8ce7f1e83d773906a4e6e6aa1f71c1817a3235a6827198"
 HAN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff\U00020000-\U000323af]")
 UNPUBLISHED_PATH = re.compile(r"/home/xiaotwu/|/mnt/c/Users/|[Cc]:[/\\]Users[/\\]", re.IGNORECASE)
 
