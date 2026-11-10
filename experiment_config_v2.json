@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "ego_front_offset_m": 2.5,
+  "ego_geometry_interpretation": "virtual front plane, not verified AV2 vehicle dimension",
+  "corridor_half_width_m": 1.75,
+  "range_m": 60.0,
+  "warmup_s": 2.0,
+  "tracker": {
+    "max_age_s": 3.0,
+    "association_base_m": 3.0,
+    "association_growth_mps": 2.0,
+    "association_max_m": 5.0,
+    "velocity_alpha": 0.5,
+    "max_speed_mps": 35.0
+  },
+  "primary_age_allowance_s": 0.2,
+  "gate_age_allowance_s": 0.2,
+  "buffer_sensitivity_m": 1.0,
+  "free_guard_m": 1.0,
+  "reference_deficit_tolerance_m": 0.1,
+  "reference_match_inflation_m": 0.75,
+  "reference_velocity_min_dt_s": 0.2,
+  "reference_velocity_max_dt_s": 0.5,
+  "observability": {
+    "history_s": 0.30,
+    "ground_abs_height_m": 0.18,
+    "obstacle_min_height_m": 0.30,
+    "obstacle_max_height_m": 3.5,
+    "min_ground_quality": 0.50,
+    "x_cell_m": 2.0,
+    "y_cell_m": 0.50,
+    "min_ground_points": 2,
+    "min_obstacle_points": 3,
+    "occupancy_dilation_cells": 1,
+    "quantization_reserve_m": 2.0,
+    "ego_front_offset_m": 2.5,
+    "corridor_half_width_m": 1.75,
+    "range_m": 60.0
+  },
+  "method_selection": "Repair designed after v1 fairness/mechanism findings; no new-holdout outcome inspected and no benefit-based parameter tuning."
+}

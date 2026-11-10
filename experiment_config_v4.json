@@ -1,0 +1,20 @@
+{
+  "schema_version": 4,
+  "scientific_base_config": "experiment_config_v2.json",
+  "validation": "retrospective leave-one-whole-log-out; all data previously inspected",
+  "quantile_level": 0.9,
+  "calibration_condition": "recorded_gap0",
+  "calibration_estimators": ["fresh", "mean", "envelope"],
+  "conditions": ["recorded_gap0", "recorded_gap0p8", "v12_gap0", "v12_gap0p8"],
+  "arms": ["C", "R2", "C_qF", "R2_qF", "Mean_qM", "Envelope", "Envelope_qF", "R3", "C_1m", "FullBrake", "Nominal"],
+  "primary_comparators": ["C_qF", "Mean_qM", "C_1m"],
+  "age_allowance_s": 0.2,
+  "gap_start_ns": 3000000000,
+  "gap_period_ns": 4000000000,
+  "gap_duration_ns": 800000000,
+  "warmup_s": 2.0,
+  "fallback_buffer_m": 0.0,
+  "numerical_mechanism_tolerance_m": 0.000001,
+  "max_new_derived_bytes": 134217728,
+  "stop_rule": "One locked retrospective experiment; no outcome-driven revision or favorable condition selection."
+}

@@ -1,2 +1,4 @@
--r replay/requirements.txt
-scipy>=1.9,<2
+# Python 3.12; core implementation and synthetic component checks.
+numpy==1.26.4
+scipy==1.17.1
+pandas==2.3.3

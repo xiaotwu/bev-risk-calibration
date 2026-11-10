@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "ego_front_offset_m": 2.5,
+  "ego_geometry_interpretation": "virtual front plane; not a verified AV2 vehicle dimension",
+  "corridor_half_width_m": 1.75,
+  "range_m": 60.0,
+  "warmup_s": 2.0,
+  "tracker": {
+    "max_age_s": 3.0,
+    "association_base_m": 3.0,
+    "association_growth_mps": 2.0,
+    "association_max_m": 5.0,
+    "velocity_alpha": 0.5,
+    "max_speed_mps": 35.0
+  },
+  "primary_age_allowance_s": 0.2,
+  "sensitivity_age_allowances_s": [0.1, 1.0],
+  "buffer_m": 1.0,
+  "reference_deficit_tolerance_m": 0.1,
+  "reference_match_inflation_m": 0.75,
+  "reference_velocity_min_dt_s": 0.2,
+  "reference_velocity_max_dt_s": 0.5
+}

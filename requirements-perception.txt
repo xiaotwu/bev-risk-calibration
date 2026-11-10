@@ -1,0 +1,7 @@
+# Optional camera inference and AV2 Feather input support.
+# Sensor inputs, manifests, and model weights are not bundled.
+-r requirements.txt
+torch==2.7.1
+torchvision==0.22.1
+pillow==13.0.0
+pyarrow==22.0.0
